@@ -1,12 +1,17 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+// tailwind.config.mjs
+import colors from 'tailwindcss/colors'
+
+export default {
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: '#3236a8',
+        muted: '#4236a8',
+      },
+    },
   },
   plugins: [],
 }
-
